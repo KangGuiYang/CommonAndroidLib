@@ -1,0 +1,94 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+
+    // 兼容版本号 最低版本号
+    android = [
+            applicationId    : "com.upbest.pattern",
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 2,
+            versionName      : "1.0.0",
+    ]
+
+    //App dependencies
+    //constraintLayout
+    constraintLayoutVersion = '1.1.3'
+    // Glide图片加载
+    glideVersion = '3.7.0'
+    // EventBus
+    eventBusVersion = '3.1.1'
+    // GSon 解析
+    gsonVersion = '2.8.5'
+    // v7appcompat-v7
+    appcompatv7Version = '28.0.0'
+    // 崩溃界面
+    customactivityoncrashVersion = '1.3.0'
+    // Rx相关 okHttpLoggingVersion = '4.0.1' 3.4.1
+    okHttpLoggingVersion = '3.10.0'
+    rxjavaVerion = '2.1.9'
+    rxAndroidVersion = '2.0.2'
+    rxPermissionVersion = '0.9.5@aar'
+    // Retrofit
+    retrofitVersion = '2.2.0'
+    // refresh
+    refreshPullVersion = '1.5.9'
+    // 黄油刀
+    BUTTERKNIFR_VERSION = '8.8.1'
+    BUTTERKNIFRCompilerVERSION = '8.8.1'
+    // 底部弹出控件
+    bottomSheetVersion = '1.5.3'
+    // 下拉刷新
+    SmartRefreshLayoutVersion = '1.1.0-alpha-28'
+    // 多状态视图
+    multiStateViewVersion = '1.3.2'
+    // 图片选择
+    matisseVersion = '0.5.2-beta4'
+    // 分包
+    multidexVersion = '1.0.3'
+    // 角标自定义View
+    badgeViewVersion = '1.1.3'
+    // 图片锁放大小
+    ImageZoom = '1.0.4'
+    // 鸿翔大神okHttpUtils
+    okHttpUtilsVersion = '2.6.2'
+    // 鲁班图片压缩
+    LubanVersion = '1.1.8'
+    // flowLayout
+    FlowLayoutVersion = '1.1.2'
+
+    compileOptions = [
+            sourceCompatibility: JavaVersion.VERSION_1_8,
+            targetCompatibility: JavaVersion.VERSION_1_8,
+    ]
+
+}

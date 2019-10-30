@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue_">#7DC1D4</color>
+    <color name="blue_dark">#20CEF0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="press">#e8e8e8</color>
+    <color name="orange">#ff902d</color>
+    <color name="orange_red">#fe8966</color>
+    <color name="home_red">#F96768</color>
+    <color name="home_red_light">#FFEDE9</color>
+
+    <color name="text_line_color">#dfdfdd</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white_alpha">#ccffffff</color>
+    <color name="black_pure">#000000</color>
+    <color name="black">#333333</color>
+    <color name="black_alpha">#22000000</color>
+    <color name="gray_dark">#666666</color>
+    <color name="gray_light">#999999</color>
+
+    <!--文字颜色-->
+    <color name="text_white">#ffffff</color>
+    <color name="text_white_alpha">#88ffffff</color>
+    <color name="text_white_dark">#cccccc</color>
+    <color name="text_gray_light">#999999</color>
+    <color name="text_gray_dark">#666666</color>
+    <color name="text_black">#333333</color>
+
+    <!-- 按钮点击背景色 -->
+    <color name="bg_btn_on">#10000000</color>
+
+</resources>

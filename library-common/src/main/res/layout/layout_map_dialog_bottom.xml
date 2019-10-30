@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_map_gao_de"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_bg"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="高德地图"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_line_color" />
+
+    <Button
+        android:id="@+id/btn_map_baidu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_bg"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="百度地图"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_line_color" />
+
+    <Button
+        android:id="@+id/btn_map_tx"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_bg"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="腾讯地图"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_line_color" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_bg"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/main_orange_color"
+        android:text="取消"
+        android:textSize="18sp" />
+
+</LinearLayout>
