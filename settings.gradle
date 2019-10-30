@@ -1,2 +1,2 @@
-include ':app', ':library-smoothprogressbar', ':library-common'
+include ':app',  ':library-common'
 rootProject.name='CommonLib'
