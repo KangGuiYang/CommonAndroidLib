@@ -29,37 +29,37 @@ android {
 }
 
 dependencies {
-    api fileTree(include: ['*.jar'], dir: 'libs')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'androidx.test.ext:junit:1.1.1'
+    androidTestCompile 'androidx.test.espresso:espresso-core:3.2.0'
+    compile 'androidx.appcompat:appcompat:1.1.0'
     // RxJava2
-    api "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVerion"
-    api "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVerion"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
     // RxPermissions
-    api "com.tbruyelle.rxpermissions2:rxpermissions:$rootProject.rxPermissionVersion"
+    compile "com.tbruyelle.rxpermissions2:rxpermissions:$rootProject.rxPermissionVersion"
     // Retrofit
-    api "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
-    api "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
-    api "com.squareup.retrofit2:converter-scalars:$rootProject.retrofitVersion"
-    api "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
-    api "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpLoggingVersion"
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-scalars:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+    compile "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpLoggingVersion"
     // EventBus
-    api "org.greenrobot:eventbus:$rootProject.eventBusVersion"
+    compile "org.greenrobot:eventbus:$rootProject.eventBusVersion"
     // Glide
-    api "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    compile "com.github.bumptech.glide:glide:$rootProject.glideVersion"
     // loading
-    api project(':library-smoothprogressbar')
+    compile project(':library-smoothprogressbar')
     // 黄油刀
-    api "com.jakewharton:butterknife:$rootProject.BUTTERKNIFR_VERSION"
+    compile "com.jakewharton:butterknife:$rootProject.BUTTERKNIFR_VERSION"
     // 多状态视图
-    api "com.github.Kennyc1012:MultiStateView:$rootProject.multiStateViewVersion"
+    compile "com.github.Kennyc1012:MultiStateView:$rootProject.multiStateViewVersion"
     // 下拉刷新
-    api "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.SmartRefreshLayoutVersion"
+    compile "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.SmartRefreshLayoutVersion"
     // ImageZoom
     implementation "it.sephiroth.android.library.imagezoom:library:$rootProject.ImageZoom"
     // 图片压缩鲁班压缩
-    api "top.zibin:Luban:$rootProject.LubanVersion"
+    compile "top.zibin:Luban:$rootProject.LubanVersion"
 
 }
